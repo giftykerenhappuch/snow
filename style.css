@@ -1,0 +1,160 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    list-style: none;
+    align-items: center;
+    position: relative;
+    left: 20rem;
+}
+.nav button{
+    padding: 10px;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#search{
+    width: 100%; 
+    max-width: 500px; 
+    padding: 7px;
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: border-color 0.3s ease;
+    position: relative;
+    left:10rem
+}
+.next ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+    gap: 100px;
+}
+.img{
+    position: relative;
+    left: 20rem;
+}
+.img1 h3{
+    font-size: 2rem;
+    position: relative;
+    left:5rem;
+}
+.img1{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    position: relative;
+    left:20rem;
+    gap:50px;
+}
+.jewel{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+.jewel2{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+.kid{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+.kid2{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+.men{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+.men2{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+.women{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+.women2{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+.login-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    position: relative;
+    left: 28rem;
+    top:7rem;
+}
+
+.login-container h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.login-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    color: #666;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+.links {
+    margin-top: 1rem;
+}
+
+.links a {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-size: 0.875rem;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,38 @@
+{
+  "rules": {
+    // Rules for user data
+    "users": {
+      "$userId": {
+        // Users can only read and write their own data
+        ".read": "$userId === auth.uid",
+        ".write": "$userId === auth.uid"
+      }
+    },
+
+    // Rules for products
+    "products": {
+      ".read": "auth != null", // Authenticated users can read product data
+      ".write": "auth != null", // Authenticated users can write product data (e.g., admins)
+      "$productId": {
+        // Only allow updates to certain fields, e.g., price and stock
+        ".validate": "newData.child('name').isString() && newData.child('price').isNumber() && newData.child('stock').isNumber()"
+      }
+    },
+
+    // Rules for orders
+    "orders": {
+      "$orderId": {
+        // Users can read their own orders
+        ".read": "$orderId === auth.uid",
+        // Users can only write orders for themselves
+        ".write": "$orderId === auth.uid"
+      }
+    },
+
+    // Publicly accessible data (e.g., product categories)
+    "categories": {
+      ".read": "true", // Anyone can read category data
+      ".write": "auth != null" // Only authenticated users can modify category data
+    }
+  }
+}
