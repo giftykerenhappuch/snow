@@ -50,7 +50,7 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const auth = getAuth(app);
-        connectAuthEmulator(auth, "http://127.0.0.1:4001");
+        connectAuthEmulator(auth, "http://127.0.0.1:4001/auth");
         // Handle login
         const loginForm = document.getElementById('login-form');
         loginForm.addEventListener('submit', (e) => {
