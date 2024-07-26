@@ -3,74 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping App Login</title>
+    <title>Login Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="login-container">
-        <h2>Welcome to ShopEase</h2>
-        <form class="login-form" id="login-form">
-            <label for="username">Username</label>
-            <input type="email" id="username" name="username" placeholder="Enter your email" required>
-            
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required>
-            
-            <button type="submit">Login</button>
-            
-            <div class="links">
-                <a href="#">Forgot Password?</a>
-                <a href="#">Create an Account</a>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
             </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
         </form>
+        <p id="error-message"></p>
     </div>
-
-    <!-- Import Firebase SDKs -->
-    <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js"></script>
-
-    <!-- Initialize Firebase -->
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js";
-        import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-auth.js";
-
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-            apiKey: "AIzaSyDKSml3lQzomkL64Z_9_XwnUQ-UoK_u1OU",
-            authDomain: "webapp-3e105.firebaseapp.com",
-            projectId: "webapp-3e105",
-            storageBucket: "webapp-3e105.appspot.com",
-            messagingSenderId: "514098056396",
-            appId: "1:514098056396:web:9f2b5a681b99860d1d0669",
-            measurementId: "G-2KNJVMX3N2"
-        };
-        
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const auth = getAuth(app);
-        connectAuthEmulator(auth, "http://127.0.0.1:4001/auth");
-        // Handle login
-        const loginForm = document.getElementById('login-form');
-        loginForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const email = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-
-            signInWithEmailAndPassword(auth, email, password)
-                .then((userCredential) => {
-                    // Signed in
-                    const user = userCredential.user;
-                    // Redirect to index page
-                    window.location.href = 'index.html';
-                })
-                .catch((error) => {
-                    const errorCode = error.code;
-                    const errorMessage = error.message;
-                    alert('Error: ' + errorMessage);
-                });
-        });
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
