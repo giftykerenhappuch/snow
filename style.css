@@ -18,6 +18,10 @@
     border-radius: 5px;
     cursor: pointer;
 }
+.next ul li a{
+    text-decoration: none;
+    color: grey;
+}
 #search{
     width: 100%; 
     max-width: 500px; 
@@ -94,20 +98,6 @@
     flex-direction: row;
     gap:50px;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .container{
     width: 90%;
     height: 60vh;
@@ -136,7 +126,7 @@ body{
     overflow: hidden;
 }
 
-.inputBox input[type="text"], .inputBox input[type="email"]{
+.inputBox input[type="text"], .inputBox input[type="email"],.inputBox input[type="city"], .inputBox input[type="number"], .inputBox input[type="address"]{
     width: 100%;
     height: 50px;
     border-radius: 5px;
@@ -149,18 +139,6 @@ body{
     color: #444;
 }
 
-.inputBox textarea{
-    width: 100%;
-    height: 120px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    overflow: hidden;
-    border: 1px solid rgba(0,0,0,0.2);
-    padding: 0px 10px;
-    font-size: 16px;
-    color: #444;
-}
 
 .inputBox button{
     width: 100%;    
@@ -193,53 +171,4 @@ body{
     font-size: 18px;
     font-weight: 900;
     display: none;
-}
-
-.login-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-#error-message {
-    color: red;
-    text-align: center;
-    margin-top: 10px;
 }
