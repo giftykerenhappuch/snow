@@ -1,79 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Ecommerce Website</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-image: url('assets/ass1.avif');
-    background-size: cover;
-    background-position: center;
-}
-
-.container {
-    background-color: rgb(248, 197, 102);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.form input {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #f1b463;
-    border-radius: 5px;
-}
-
-.form button {
-    background-color: rgb(228, 159, 32);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.form button:hover {
-    background-color: #0056b3;
-}
-
-    </style>
 </head>
-<body>
-    <div class="container">
-        <div class="form-container">
-            <form id="login-form" class="form" onsubmit="return handleLogin(event)">
-                <h2>Login</h2>
-                <input type="email" id="login-email" placeholder="Email" required>
-                <input type="password" id="login-password" placeholder="Password" required>
-                <button type="submit">Login</button>
-            </form>
-        </div>
+<body style="overflow-x: hidden;">
+    <div class="nav">
+        <h2>Snoww👗</h2>
+        <input id="search" value="search what you want🔍"/>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Profile</li>
+                <li>Logout</li>
+                <li><a href="query.html"><button>Contact</button></a></li>
+            </ul>
+        </nav>
     </div>
-
-    <script src="main.js"></script>
-</body>
+        <div class="next">
+            <ul style="color: grey;">
+                <li><a href="girl.html">kurthi</a></li>
+                <li><a href="girl.html">Watch</a></li>
+                <li><a href="girl.html">Night dress</a></li>
+                <li><a href="girl.html">Kitchen & Home</a></li>
+                <li><a href="girl.html">Jewellery & Accessories</a></li>
+                <li><a href="girl.html">Beauty products</a></li>
+            </ul>
+        </div>
+        <div class="img1">
+            <a href="girl.html"><img src="assets\watch.webp" height="300" width="300"></a>
+            <a href="girl.html"><img src="assets\kid.jfif" height="300" width="300"></a>
+            <a href="girl.html"><img src="assets\accesories.jpg" height="300" width="300"></a>
+            <a href="girl.html"><img src="assets\women.jfif" height="300" width="300"></a>
+            <h3>Shop with a heart full of joy 😍</h3>
+        </div>
+        <div class="img">
+            <img src="assets\shoping.png" height="300" width="300">
+            <img src="assets\offer.png" height="300" width="300">
+        </div>
+    </body>
 </html>
