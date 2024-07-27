@@ -66,7 +66,7 @@ function handleLogin(event) {
   // For demonstration purposes, we just check if the email and password are not empty
   if (email && password) {
       alert('Login successful!');
-      window.location.href = 'index.html'; // Replace with your next page URL
+      window.location.href = 'first.html'; // Replace with your next page URL
   } else {
       alert('Please enter your email and password.');
   }
