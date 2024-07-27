@@ -56,3 +56,18 @@ const saveMessages = (name, emailid, num, add, city) => {
 const getElementVal = (id) => {
   return document.getElementById(id).value;
 };
+
+function handleLogin(event) {
+  event.preventDefault();
+  // Implement your login logic here, e.g., validate credentials
+  const email = document.getElementById('login-email').value;
+  const password = document.getElementById('login-password').value;
+
+  // For demonstration purposes, we just check if the email and password are not empty
+  if (email && password) {
+      alert('Login successful!');
+      window.location.href = 'index.html'; // Replace with your next page URL
+  } else {
+      alert('Please enter your email and password.');
+  }
+}
