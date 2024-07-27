@@ -98,6 +98,20 @@
     display: flex;
     flex-direction: row;
     gap:50px;
+    margin-bottom: 20px;
+}
+.women3{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    margin-bottom: 20px;
+}
+
+.women4{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    margin-bottom: 20px;
 }
 .container{
     width: 90%;
