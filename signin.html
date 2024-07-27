@@ -18,11 +18,11 @@
             background-size: cover;
             background-position: center;
         }
-        #image {
+        #imagee {
             position: relative;
             left: 4rem;
         }
-        #email, #password ,#passwordd{
+        #emaill, #passwordd {
             position: relative;
             width: 350px;
             background-color: #f1b463;
@@ -34,44 +34,35 @@
             color: black;
             opacity: 1;
         }
-        .container {
-            background-color: rgb(248, 197, 102);
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            box-sizing: border-box;
-        }
-        #loginf h5 {
+        #loginff h5 {
             font-size: 1.2rem;
         }
-        #loginf {
+        #loginff {
             display: flex;
             flex-direction: column;
             align-items: center;
             border-radius: 10px;
             padding: 10px;
         }
-        #loginf button {
+        #loginff button {
             padding: 15px;
             background-color: #c57d1e;
             border-radius: 10px;
             position: relative;
             left: 6rem;
-            gap:50px;
             top: -3rem;
         }
     </style>
 </head>
 <body>
-    <div style="background-color: #f1b463; width:350px" id="loginf">
-        <form id="form">
-            <img src="assets/shoping.png" height="150px" width="250px" id="image">
-            <h5>Sign up</h5>
-            <input type="email" id="email" placeholder="Enter your email..." style="margin-bottom: 10px;">
-            <input type="password" id="password" placeholder="Enter your password..." minlength="6" style="margin-bottom: 10px;" >
-            <input type="password" id="passwordd" placeholder="Enter your password again..." minlength="6" style="margin-bottom: 70px;">
+    <div style="background-color: #f1b463; width:350px" id="loginff">
+        <form id="formm">
+            <img src="assets/shoping.png" height="150px" width="250px" id="imagee">
+            <h5>Sign in</h5>
+            <input type="email" id="emaill" placeholder="Enter your email..." style="margin-bottom: 10px;">
+            <input type="password" id="passwordd" placeholder="Enter your password..." minlength="6" style="margin-bottom: 100px;">
             <button type="submit">Continue</button>
-            <a href="signin.html"><button type="button">Sign in</button></a>
+            <a href="index.html"><button type="button">Sign up</button></a>
         </form>
     </div>
     <!-- Firebase App (the core Firebase SDK) -->
@@ -79,6 +70,6 @@
     <!-- Firebase Authentication SDK -->
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
     <!-- Your custom script -->
-    <script src="last.js"></script>
+    <script src="last1.js"></script>
 </body>
 </html>
