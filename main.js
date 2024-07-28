@@ -39,6 +39,7 @@ function submitForm(e) {
 
   //   reset the form
   document.getElementById("contactForm").reset();
+  window.location.href='confirm.html'
 }
 
 const saveMessages = (name, emailid, num, add, city) => {
